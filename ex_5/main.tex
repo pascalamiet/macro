@@ -1,0 +1,144 @@
+\documentclass[11pt]{article} % font size
+\usepackage{graphicx}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{url}
+\usepackage{bbm}
+\usepackage{setspace}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{rotating}
+\usepackage{harvard}
+\usepackage{enumitem}
+\usepackage{verbatim}
+\usepackage{subfiles}
+\usepackage{csvsimple}
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{listings}
+\usepackage[utf8]{inputenc} % package for nonstandard letters (umlauts etc)
+\usepackage{natbib} % bibliography
+\usepackage{booktabs} % For nice tables
+% setting up the design
+\usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry}
+\renewcommand{\baselinestretch}{1.5} % line spacing
+\renewcommand{\topfraction}{0.99}
+\renewcommand{\bottomfraction}{0.99}
+\renewcommand{\textfraction}{0.01}
+\renewcommand{\floatpagefraction}{0.99}
+\setlength{\footnotesep}{5mm}
+\setlength{\parindent}{0em} % length of indent
+\setlength{\parskip}{1em} % length of paragraph skip
+\sloppy % to avoid messy line breaks
+% some shortcuts and user-declared macros
+\def\k{\ensuremath\kappa}
+\def\l{\ensuremath\lambda}
+%\addtolength{\oddsidemargin}{-0.5cm} % paper dimensions
+%\addtolength{\evensidemargin}{-0.5cm}
+%\addtolength{\textwidth}{1cm}
+%\addtolength{\topmargin}{-0.5cm}
+
+
+\begin{document}
+
+\thispagestyle{empty}
+\ \vspace{1.0cm}
+\begin{center}
+{\LARGE
+MACRO III \\
+\textit{Exercise 5} \\
+{\small - Hybrid Growth Model -}\\[2cm]
+}
+
+{
+Major in Economics \\
+{University of St. Gallen} \\ [2cm]
+Instructor:\\
+Cozzi Guido \\[2cm]
+}
+
+{
+Group:\\
+Amiet Pascal (18-605-428)\\
+Bittencourt André (17-622-887)\\
+LeRoy Juliette (18-614-008)\\
+}
+\end{center}
+
+\pagebreak
+
+\textbf{\Large{Exercise 5.1}}
+
+\textit{This exercise relates to the Solow model with endogenous R\&D presented in chapter 9 of the textbook. Consider the semi-endogenous version of the model (i.e. $0 < \phi < 1$) with $n > 0$.}\\
+
+\textit{a) Show that the steady-state growth path for consumption per capita is given by}
+\begin{center}
+    $c_t^* = (1-s)\left(\frac{s}{n+g_{se}+\delta+ng_{se}}\right)^{\frac{\alpha}{1-\alpha}}(1-s_{R})s_R^{\frac{\lambda}{1-\phi}}\left(\frac{\rho}{g_{se}} \right)^{\frac{1}{1-\phi}}L_0^{\frac{\lambda}{1-\phi}}(1+g_{se})^t$,
+\end{center}
+\textit{where $s_R$ is the R\&D-share.}
+
+
+
+\pagebreak
+\textit{b) Find the golden rule values of $s$ and $s_R$, i.e. the values of $s$ and $s_R$, respectively, that maximize $c_t^*$.}
+
+
+
+
+\pagebreak
+\textit{c) How does the golden rule $s_R$ depend on $\lambda$ and $\phi$?}
+
+
+
+
+\pagebreak
+\textit{d) Explain why $n > 0$ does not imply increasing (but rather positive and constant) growth rates in the long run?}
+
+
+
+
+\pagebreak
+\textit{e) Discuss the "scale effect" present in this model by stating how a larger level of the labor force $L_0$ affects the steady state growth path of output per worker.}
+
+
+
+
+\pagebreak
+\textbf{\Large{Exercise 5.2}}
+
+\textit{This is an exercise based on the Cozzi (2017) model. The parameters for Economy 1 are given by $\alpha = 0.33$, $\alpha_{sem} = 0.4$, $\phi = 0.4$, $\lambda = 0.8$, $\delta=0.1$, $s=0.25$, $s_R =0.04$, $\rho=1$, $n = 0.04$, $L_0 = 1$, $K_0 = 1$, $A_0 = 1$. Economy 2 is characterized by the same parameters except for the population growth rate, which happens to be $n = 0.02$.}\\
+
+\textit{a) Find the steady-state growth rates for both economies. Furthermore, find the steady-state values for capital and output ($k^*$ and $y^*$) for both economies. Is growth endogenous or semi-endogenous on the balanced growth path?}
+
+
+
+
+\pagebreak
+\textit{b) Simulate these economies, i.e. produce time series for $\Tilde{k}_t$, $\Tilde{y}_t$, $\Tilde{c}_t$, $s\Tilde{y}_t$, $A_t$, $L_t$, $g_t \equiv \frac{A_{t+1}}{A_t} - 1$, $\ln(y_t)$, $\ln(c_t)$ and $g_t^y = \ln(y_t) - \ln(y_{t-1})$. Simulate 1000 periods. Note that gt is the growth rate of technology, while $g_t^y$ is the growth rate of per capita output.}
+
+
+
+
+
+\pagebreak
+\textit{c) Produce the following diagrams:\\
+- showing the evolution of $\ln(y_t)$ for both economies;\\
+- showing the evolution of $g_t^y$ for both economies;\\
+- showing the evolution of $g_t^y$ and $g_t$ for both economies for the first 100 periods.}
+
+
+
+
+\pagebreak
+\textit{d) Discuss your results by comparing the two economies.}
+
+
+
+
+\pagebreak
+\textbf{\Large{Exercise 5.3 - BONUS}}
+
+\textit{Having studied several types of endogenous growth models, summarize the most important features and differences in these models. What drives growth in the semi-endogenous version of these models?}
+
+\end{document}
