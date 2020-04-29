@@ -2,9 +2,6 @@
 ##                   Macroeconomics III - Exercise 4                     ##.
 ###########################################################################.
 
-# test
-library(ggplot2)
-
 # install packages
 library(tidyverse)
 library(gdata)
