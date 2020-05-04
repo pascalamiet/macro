@@ -78,16 +78,285 @@ LeRoy Juliette (18-614-008)\\
 \end{center}
 \textit{where $s_R$ is the R\&D-share.}
 
+\bigskip\bigskip\bigskip \textbf{Solution:}
+\par Clearly the Steady-State (SS) growth path for consumption per capita should be equal to the SS growth path for output per capita times the investment rate $(1-s)$:
+
+\begin{equation}
+    {c_t}^*={y_t}^{*}(1-s)
+\end{equation}
+
+\par the SS output per worker ${y_t}^*$ is equal to the effective one $\Tilde{y_t^*}$ times $A_t$:
+
+\begin{equation}
+    y_t^*=\Tilde{y_t^*}A_t
+\end{equation}
+
+\par Thus, we know that $\Tilde{y_t^*}=\frac{Y_t}{{A_t}{L_t}}$ and that the production function is $Y_t={K_t}^{\alpha}\left({L_t}(1-{s_R}){A_t}\right)^{1-\alpha}$. Therefore dividing the production function by $A_tL_t$ gives us $\Tilde{y_t^*}$:
+
+\begin{align*}
+    \frac{Y_t}{A_tL_t}=\frac{{K_t}^{\alpha}\left(L_t(1-{s_R})A_t\right)^{1-\alpha}}{A_tL_t}
+\end{align*}
+\begin{align*}
+    \Tilde{y_t^*}={K_t}^{\alpha}(1-s_R)^{1-\alpha}(L_tA_t)^{1-\alpha}(L_tA_t)^{-1}
+\end{align*}
+\begin{align*}
+    =\frac{{K_t}^\alpha}{(L_tA_t)^{\alpha}}(1-{s_R})^{1-\alpha}
+\end{align*}
+\begin{align*}
+    =\left(\frac{{K_t}}{L_tA_t}\right)^{\alpha}(1-{s_R})^{1-\alpha}
+\end{align*}
+\begin{equation}
+    \Tilde{y_t^*}=\Tilde{k_t^*}^{\alpha}(1-{s_R})^{1-\alpha}
+\end{equation}
+
+\par Equation (3) implies that the SS value of output per efficient worker should be equal to the capital one elevated to the power of $\alpha$. To calculate this value, we first derive the transition equation:
+
+\begin{align*}
+    K_{t+1}=sY_t+K_t(1+\delta)    
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow\frac{K_{t+1}}{{L_{t+1}}{A_{t+1}}}=\frac{1}{{{L_{t+1}}{A_{t+1}}}}\left(sY_t+K_t(1-\delta)\right)
+\end{align*}
+
+\par Dividing both the numerator and denominator of the right-hand term fraction by $A_tL_t$ gives the whole expression in efficient per capita values:
+
+\begin{align*}
+    \Longleftrightarrow\Tilde{k_{t+1}}=\frac{1}{(1+n)(1+g_t)}\left(s\Tilde{y_t}+\Tilde{k_t}(1-\delta)\right)
+\end{align*}
+
+\par We set the SS condition for capital $\Tilde{k_{t+1}}=\Tilde{k_{t}}$ and insert equation (3) in the last expression, so we express it in terms of SS value per efficient worker, $\Tilde{k_{t}^*}$:
+
+\begin{align*}
+    \Tilde{k_{t}^*}=\frac{1}{(1+n)(1+g_t)}\left(s\Tilde{k_{t}^*}^{\alpha}(1-s_R)^{1-\alpha}+\Tilde{k_{t}^*}(1-\delta)\right)
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow\Tilde{k_{t}^*}=\frac{1}{(1+n)(1+g_t)}\Tilde{k_{t}^*}\left(s\Tilde{k_{t}^*}^{\alpha-1}(1-s_R)^{1-\alpha}+(1-\delta)\right)
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow1=\frac{1}{(1+n)(1+g_t)}\left(s\Tilde{k_{t}^*}^{\alpha-1}(1-s_R)^{1-\alpha}+(1-\delta)\right)
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow \frac{(1+n)(1+g_t)-(1-\delta)}{(1-s_R)^{1-\alpha}s}=\Tilde{k_{t}^*}^{\alpha-1}
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow \left(\frac{(1+n)(1+g_t)-(1-\delta)}{(1-s_R)^{1-\alpha}s}\right)^{\frac{1}{\alpha-1}}=\Tilde{k_{t}^*}
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow \left(\frac{(1-s_R)^{1-\alpha}s}{(1+n)(1+g_t)-(1-\delta)}\right)^{\frac{1}{1-\alpha}}=\Tilde{k_{t}^*}
+\end{align*}
+
+\par Pulling out $(1-s_R)^{1-\alpha}$ of parenthesis and multiplying $(1+n)(1+g_t)-(1-\delta)$ with each other, gives the SS value of capital per efficient worker:
+
+\begin{equation}
+    \Tilde{k_{t}^*}=\left(\frac{s}{g_t+n+g_tn+\delta}\right)^{\frac{1}{1-\alpha}}(1-s_R)
+\end{equation}
+
+\bigskip\par Inserting (3) in (4), yields the SS value of output per efficient worker: 
+
+\begin{equation}
+    \Tilde{y_{t}^*}=\left(\frac{s}{g_t+n+g_tn+\delta}\right)^{\frac{\alpha}{1-\alpha}}(1-s_R)
+\end{equation}
+
+Since $y_t^*=\Tilde{y_t^*}A_t$, is still necessary to calculate $A_t$, so we arrive to (1). In the semi-endogenous growth model the change in technology defined as $A_{t+1}-A_t = {\rho}{A_t}^{\phi}(Ls_R)^{\lambda}$. To be expressed in a growth rate, it has to be devided by $A_t$:
+
+\begin{align*}
+    \frac{A_{t+1}-A_t}{A_t} = \frac{{\rho}{A_t}^{\phi}(Ls_R)^{\lambda}}{A_t}
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow g_t = {\rho}{A_t}^{\phi-1}(Ls_R)^{\lambda}
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow \frac{g_t}{\rho(Ls_R)^{\lambda}} = {A_t}^{\phi-1}
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow \left(\frac{g_t}{\rho(Ls_R)^{\lambda}}\right)^{\frac{1}{\phi-1}} = {A_t}
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow\left(\frac{\rho(Ls_R)^{\lambda}}{g_t}\right)^{\frac{1}{1-\phi}} = {A_t}
+\end{align*}
+\begin{equation}
+    A_t=\left(\frac{\rho}{g_t}\right)^{\frac{1}{1-\phi}}(Ls_R)^{\frac{\lambda}{1-\phi}}
+\end{equation}
+
+\par Inserting (6) and (5) in (2), gives the SS value of output per worker, ${y_t}^*$:
+
+\begin{equation}
+    {y_t}^* = \left(\frac{s}{g_t+n+g_tn+\delta}\right)^{\frac{\alpha}{1-\alpha}}(1-s_R) \left(\frac{\rho}{g_t}\right)^{\frac{1}{1-\phi}}(Ls_R)^{\frac{\lambda}{1-\phi}}
+\end{equation}
+
+\bigskip\par Additionally, we express $(Ls_R)^{\frac{\lambda}{1-\phi}}$ in terms of $L_0$ as follows:
+
+\begin{align*}
+    s_R^{\frac{\lambda}{1-\phi}}\left(L_0(1+n)^{t}\right)^{\frac{\lambda}{1-\phi}}
+\end{align*}
+\begin{equation}
+    \Longleftrightarrow s_R^{\frac{\lambda}{1-\phi}}L_0^{\frac{\lambda}{1-\phi}}\left((1+n)^{t}\right)^{\frac{\lambda}{1-\phi}}
+\end{equation}
+
+\bigskip\par Moreover, since the SS growth rate of technology is defined as $g_{se}=(1+n)^{\frac{\lambda}{1-\phi}}-1$, it is clear that $g_{se}+1=(1+n)^{\frac{\lambda}{1-\phi}}$. Inserting this in (8), yields:
+
+\begin{equation}
+    s_R^{\frac{\lambda}{1-\phi}}L_0^{\frac{\lambda}{1-\phi}}(g_{se}+1)^t
+\end{equation}
+
+\bigskip\par Inserting (9) in (7) and substituting the growth rates $g_t$ by the SS growth rate $g_{se}$, yields:
+
+\begin{equation}
+    {y_t}^* = \left(\frac{s}{g_{se}+n+g_{se}n+\delta}\right)^{\frac{\alpha}{1-\alpha}}(1-s_R) \left(\frac{\rho}{g_{se}}\right)^{\frac{1}{1-\phi}}s_R^{\frac{\lambda}{1-\phi}}L_0^{\frac{\lambda}{1-\phi}}(g_{se}+1)^t
+\end{equation}
+
+\bigskip\par Finally, multiplying (10) by the investment rate $(1-s)$, gives steady-state growth path for consumption per capita, $c_t^*$:
+
+\begin{equation}
+    c_t^* = (1-s)\left(\frac{s}{n+g_{se}+\delta+ng_{se}}\right)^{\frac{\alpha}{1-\alpha}}(1-s_{R})s_R^{\frac{\lambda}{1-\phi}}\left(\frac{\rho}{g_{se}} \right)^{\frac{1}{1-\phi}}L_0^{\frac{\lambda}{1-\phi}}(1+g_{se})^t
+\end{equation}
+
+
+
+
+
+
+
+
 
 
 \pagebreak
 \textit{b) Find the golden rule values of $s$ and $s_R$, i.e. the values of $s$ and $s_R$, respectively, that maximize $c_t^*$.}
+
+\bigskip\bigskip\bigskip\par \textbf{Solution:}
+\par The golden rule values for $s$ and $s_R$ can be found if the maximization problems $\frac{\partial{c_t}^*}{\partial{s}}=0$ and $\frac{\partial{c_t}^*}{\partial{s_r}}=0$ are solved, respectively.
+
+\par Maximizing consumption through $s$ yields:
+
+\begin{align*}
+    \frac{\partial{c_t}^*}{\partial{s}} = 0
+    \Longleftrightarrow \left[(1-s)\left(\frac{s}{n+g_{se}+\delta+ng_{se}}\right)^{\frac{\alpha}{1-\alpha}}\right]^{'}(1-s_{R})s_R^{\frac{\lambda}{1-\phi}}\left(\frac{\rho}{g_{se}} \right)^{\frac{1}{1-\phi}}L_0^{\frac{\lambda}{1-\phi}}(1+g_{se})^t=0
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow \left[(1-s)\left(\frac{s}{n+g_{se}+\delta+ng_{se}}\right)^{\frac{\alpha}{1-\alpha}}\right]^{'}=0 
+\end{align*}
+
+\bigskip\par From the chain rule, we know:
+
+\begin{align*}
+    \Longleftrightarrow 
+    \left[(1-s)\right]^{'}\left(\frac{s}{n+g_{se}+\delta+ng_{se}}\right)^{\frac{\alpha}{1-\alpha}}
+    +(1-s)\left[\left(\frac{s}{n+g_{se}+\delta+ng_{se}}\right)^{\frac{\alpha}{1-\alpha}}\right]^{'}
+    =0
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow
+    (-1) \left(\frac{s}{n+g_{se}+\delta+ng_{se}}\right)^{\frac{\alpha}{1-\alpha}}
+    + (1-s) \frac{\alpha}{1-\alpha}\left(\frac{s}{n+g_{se}+\delta+ng_{se}}\right)^{\frac{\alpha}{1-\alpha}-1}\left[\frac{s}{n+g_{se}+\delta+ng_{se}}\right]^{'}
+    =0
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow
+    (-1)1
+    + (1-s) \frac{\alpha}{1-\alpha}\left(\frac{s}{n+g_{se}+\delta+ng_{se}}\right)^{\frac{2\alpha-1}{1-\alpha}-\frac{\alpha}{1-\alpha}}\left(\frac{1}{n+g_{se}+\delta+ng_{se}}\right)
+    =0
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow
+    (1-s) \frac{\alpha}{1-\alpha}\left(\frac{s}{n+g_{se}+\delta+ng_{se}}\right)^{\frac{\alpha-1}{1-\alpha}}
+    \left(\frac{1}{n+g_{se}+\delta+ng_{se}}\right)
+    =1
+\end{align*}
+
+\bigskip\par Knowing that for any positive $\alpha < 1$, $\frac{\alpha-1}{1-\alpha} = -1$. Thus, we have:
+
+\begin{align*}
+    (1-s) \frac{\alpha}{1-\alpha}\left(\frac{s}{n+g_{se}+\delta+ng_{se}}\right)^{-1}
+    \left(\frac{1}{n+g_{se}+\delta+ng_{se}}\right)
+    =1
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow
+    (1-s) \frac{\alpha}{1-\alpha}\frac{n+g_{se}+\delta+ng_{se}}{s}
+    \frac{1}{n+g_{se}+\delta+ng_{se}}
+    =1
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow
+    (1-s) \frac{\alpha}{1-\alpha} \frac{1}{s}=1
+\end{align*}
+\begin{equation}
+    \Longleftrightarrow
+    \frac{\alpha(1-s)}{(1-\alpha)s}=1
+\end{equation}
+
+\bigskip \par It is clear that (12) is equal to 1 if, and only if, $s = \alpha$. Thus, we find that the consumption maximizing savings rate must be equal to $\alpha$.
+
+\par Repeating the same procedure with $s_R$ returns:
+
+\begin{align*}
+    \frac{\partial{c_t}^*}{\partial{s_R}} = 0
+    \Longleftrightarrow (1-s)\left(\frac{s}{n+g_{se}+\delta+ng_{se}}\right)^{\frac{\alpha}{1-\alpha}}\left[(1-s_{R})s_R^{\frac{\lambda}{1-\phi}}\right]^{'}\left(\frac{\rho}{g_{se}} \right)^{\frac{1}{1-\phi}}L_0^{\frac{\lambda}{1-\phi}}(1+g_{se})^t=0
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow
+    \left[(1-s_{R})s_R^{\frac{\lambda}{1-\phi}}\right]^{'} 
+    = 0
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow
+    \left[(1-s_{R})\right]^{'} s_R^{\frac{\lambda}{1-\phi}}
+    + (1-s_{R}) \left[s_R^{\frac{\lambda}{1-\phi}}\right]^{'}
+    = 0
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow
+    (-1)s_R^{\frac{\lambda}{1-\phi}}
+    + (1-s_{R}) \frac{\lambda}{1-\phi} s_R^{\frac{\lambda}{1-\phi}-1}
+    = 0
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow
+    (1-s_{R}) \frac{\lambda}{1-\phi} s_R^{\frac{\phi-1}{1-\phi}}
+    = 1
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow
+    \frac{(1-s_{R})\lambda}{(1-\phi)s_R}
+    = 1
+\end{align*}
+\begin{align*}
+    \Longleftrightarrow
+    \lambda-s_R\lambda
+    = s_R-\phi s_R
+\end{align*}
+\begin{equation}
+    \Longleftrightarrow
+    s_R = \frac{\lambda}{1+\lambda-\phi}
+\end{equation}
+
+\bigskip \par Thus, we find that the consumption maximizing share of labour in R&D, $s_R$, must be equal to $\frac{\lambda}{1+\lambda-\phi}$.
+
+
+
+
+
+
+
 
 
 
 
 \pagebreak
 \textit{c) How does the golden rule $s_R$ depend on $\lambda$ and $\phi$?}
+
+\bigskip\bigskip\bigskip\par \textbf{Solution:}
+\par If $\lambda$, a coefficient that determines a negative spillover from the aggregate activity level in the R&D sector to the productivity of an individual firm ($0<\lambda<1$, if $\lambda=1$ there is no such effect), rises or decreases, the optimal $s_R$ remains constant. On the other hand, if $\phi$ decreases, the share of people in R&D will decrease and vice-versa.
+
+\par This is pretty logical: since $\phi$ determines how new technology contributes to the creation of more technology, if $\phi$ rises, more people in R&D are employed because there is an extra gain on technology productivity, even though there is less labour in production. But the extra gain in productivity augments the total output produced, compensating the foregone production of the "switching-sides" workers.
+
+
+
+
+
+
+
+
 
 
 
