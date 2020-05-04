@@ -62,7 +62,7 @@ Cozzi Guido \\[2cm]
 Group:\\
 Amiet Pascal (18-605-428)\\
 Bittencourt André (17-622-887)\\
-LeRoy Juliette (18-614-008)\\
+Le Roy Juliette (18-614-008)\\
 }
 \end{center}
 
@@ -95,11 +95,21 @@ LeRoy Juliette (18-614-008)\\
 \pagebreak
 \textit{d) Explain why $n > 0$ does not imply increasing (but rather positive and constant) growth rates in the long run?}
 
+\{Looking at the formula for $g_t$, we can see that $0 < \phi < 1$ has negative effect on the growth rate:$g_t = \rho A_t^{\phi - 1} L_At^{\lambda}$. As $t$ goes to infinity, the existing stock of technology $A_t$ grows towards infinity too, while $g_t$ goes to zero because of the negative exponent. In order to offset this negative effect and keep a constant growth rate of technology, $g_t$, in the long-run, a positive growth rate in the labour force, $n$, is necessary, assuming a constant share of labour in R&D, $s_R$. Therefore, $n > 0$ does not imply an increasing, but rather positive and constant growth rate of technology in the long-run.}
 
 
 
 \pagebreak
 \textit{e) Discuss the "scale effect" present in this model by stating how a larger level of the labor force $L_0$ affects the steady state growth path of output per worker.}
+
+\{In the long-run, the steady-state output per worker is obtained by multiplying the steady-state output per efficient worker with the equation for $A_t$. Now one can show how the initial level of labour $L_0$ affects the steady-state output per worker by reformulating the $L_t$ expression with $L_0$. This looks as follows}
+\begin{center}
+$y^~* = (\frac{s}{n+g_{se}+\delta+ng_{se}}\right)^{\frac{\alpha}{1-\alpha}}(1-s_{R})$ \\
+$A_t = (\frac{\rho(s_{R}L_{t})^{\lambda}}{g_{se}})^(frac{1}{1-\phi})$\\
+$L_t^(frac{\lambda}{1-\phi}) = L_0^{\frac{\lambda}{1-\phi}}(1+g_{se})^t$\\
+$y_t^* = (\frac{s}{n+g_{se}+\delta+ng_{se}}\right)^{\frac{\alpha}{1-\alpha}}(1-s_{R})s_R^{\frac{\lambda}{1-\phi}}\left(\frac{\rho}{g_{se}} \right)^{\frac{1}{1-\phi}}L_0^{\frac{\lambda}{1-\phi}}(1+g_{se})^t $\\
+\end{center}
+\{From there, and knowing that $g_se$, the long-run growth rate of technology, does not depend on the level of labour but rather on it growth rate $n$, we can see that a higher initial level of labour $L_0$ only affects the level of output per worker in steady-state through an increased technology level, but not the growth rate of output per worker. Therefore, this model implies a scale effect on the level of output per worker only, but not on its growth rate.}
 
 
 
